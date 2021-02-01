@@ -1,0 +1,28 @@
+.train_departures_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  min-height: 150px;
+  font-size: xx-large;
+  background-color: white;
+  color: #003082;
+  border: 1px solid grey;
+}
+
+.departure_time_direction_flex {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.departure_platform_type_flex {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.direction--font {
+  font-size: 45px;
+}
