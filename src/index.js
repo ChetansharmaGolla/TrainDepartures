@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import TrainDepartures from "./components/TrainDepartures.Data";
+import TrainDepartures from "./components/TrainDeparture/TrainDepartures.Data";
 import reportWebVitals from "./reportWebVitals";
+import Text from "./components/TextComponent/Text";
+import { HEADER_TITLE } from "./api/Constants";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TrainDepartures />
+    <div className="pagedata">
+      <Text value={HEADER_TITLE} className="headertitle" />
+      <TrainDepartures />
+    </div>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,0 +1,8 @@
+.errorcontainer {
+  width: 75%;
+  color: orangered;
+  font-size: 65px;
+  margin: auto;
+  height: 800px;
+  text-align: center;
+}

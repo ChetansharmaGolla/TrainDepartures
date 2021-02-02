@@ -1,3 +1,10 @@
+/**
+ * I had to make use of this Server file to handle CORS issue.
+ * While accesing the API from the front end, i got a CORS issue, so to allow cross domain requests,
+ * had to implement this server file so that the getStations API call will go through this server,
+ * and sends back the response to frontend
+ */
+
 var express = require("express");
 var axios = require("axios");
 var app = express();
