@@ -2,7 +2,7 @@ import TrainDeparturesAPI from "./TrainDepartures";
 import { shallow } from "enzyme";
 
 describe("<TrainDeparturesAPI />", () => {
-  it("should retrieve the stations data", () => {
+  it("should retrieve the Stations data", () => {
     const payload = TrainDeparturesAPI.getStations();
     expect(payload).toBeTruthy();
   });

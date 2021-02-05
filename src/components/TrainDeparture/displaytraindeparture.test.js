@@ -9,7 +9,7 @@ describe("<TrainDeparturesData />", () => {
   const {
     payload: { departures: failureDep },
   } = failureScenario;
-  it("should correctly render the component", () => {
+  it("should correctly Render the component", () => {
     const wrapper = shallow(<DisplayTrainDepartures departures={departures} />);
     console.log(wrapper);
     expect(wrapper.is("div")).toBeTruthy();

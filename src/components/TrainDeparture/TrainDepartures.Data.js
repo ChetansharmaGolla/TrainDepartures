@@ -22,11 +22,14 @@ class TrainDeparturesData extends PureComponent {
     getStationsData
       .then((resp) => {
         this.setState({
-          stations: this.filterStation(resp.data.data),
+          stations: this.filterStation(resp.data.payload),
           loading: true,
         });
       })
-      .catch((error) => this.setState({ error: true, loading: false }));
+      .catch((error) => {
+        console.log(error);
+        this.setState({ error: true, loading: false });
+      });
   }
 
   componentDidUpdate(oldState) {

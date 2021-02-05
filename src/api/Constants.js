@@ -1,4 +1,4 @@
-export const GETSTATIONSURI = "http://localhost:8083/v1/getstations";
+export const GETSTATIONSURI = "http://127.0.0.1:8000/"; //"http://localhost:8083/v1/getstations";
 //"https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/stations";
 export const GETDEPARTURES =
   "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/departures?station={stationcode}";

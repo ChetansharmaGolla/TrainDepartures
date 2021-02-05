@@ -7,11 +7,7 @@ class TrainDepartures {
    *  */
 
   static getStations() {
-    return axios.get(GETSTATIONSURI, {
-      headers: {
-        "Ocp-Apim-Subscription-Key": SUBSCRIPTIONKEY,
-      },
-    });
+    return axios.get(GETSTATIONSURI);
   }
 
   /*
